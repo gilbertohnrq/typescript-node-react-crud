@@ -21,6 +21,9 @@ export class Funcionarios {
   cargo: string;
 
   @Column()
+  descricao_cargo: string;
+
+  @Column()
   data_de_nascimento: string;
 
   @Column()

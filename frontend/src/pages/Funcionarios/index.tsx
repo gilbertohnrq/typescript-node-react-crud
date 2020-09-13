@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Table, Button } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 import api from '../../services/api';
+
+import './index.css';
 
 interface IFuncionario {
   id: number;
   nome: string;
   sobrenome: string;
   cargo: string;
-  data_de_nascimento: string;
-  salario: number;
 }
 
 const Funcionarios: React.FC = () => {
   const [funcionarios, setFuncionarios] = useState<IFuncionario[]>([]);
+  const history = useHistory();
 
   useEffect(() => {
     loadFuncionarios();
@@ -24,43 +26,68 @@ const Funcionarios: React.FC = () => {
     setFuncionarios(response.data);
   }
 
+  async function removeFuncionario(id: number) {
+    await api.delete(`/funcionarios/${id}`);
+    loadFuncionarios();
+  }
+
+  function newFuncionario() {
+    history.push('/funcionarios_cadastro');
+  }
+
+  function editFuncionario(id: number) {
+    history.push(`/funcionarios_cadastro/${id}`);
+  }
+  function viewFuncionario(id: number) {
+    history.push(`/funcionarios/${id}`);
+  }
+
   return (
     <div className="container">
       <br />
-      <h1>Página de Funcionários</h1>
+      <div className="funcionario-header">
+        <h1>Página de Funcionários</h1>
+        <Button variant="dark" onClick={newFuncionario}>
+          Novo Funcionário
+        </Button>
+      </div>
       <br />
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>ID</th>
             <th>Nome</th>
             <th>Sobrenome</th>
             <th>Cargo</th>
-            <th>Data de Nascimento</th>
-            <th>Salário</th>
             <th>Ações</th>
           </tr>
         </thead>
         <tbody>
           {funcionarios.map((funcionario) => (
             <tr key={funcionario.id}>
-              <td>{funcionario.id}</td>
               <td>{funcionario.nome}</td>
               <td>{funcionario.sobrenome}</td>
               <td>{funcionario.cargo}</td>
-              <td>{funcionario.data_de_nascimento}</td>
-              <td>{funcionario.salario}</td>
               <td>
-                <Button size="sm">Editar</Button>
-                {'  '}
-                <Button size="sm" variant="info">
+                <Button
+                  size="sm"
+                  onClick={() => editFuncionario(funcionario.id)}
+                >
+                  Editar
+                </Button>{' '}
+                <Button
+                  size="sm"
+                  variant="info"
+                  onClick={() => viewFuncionario(funcionario.id)}
+                >
                   Visualizar
-                </Button>
-                {'  '}
-                <Button size="sm" variant="danger">
+                </Button>{' '}
+                <Button
+                  size="sm"
+                  variant="danger"
+                  onClick={() => removeFuncionario(funcionario.id)}
+                >
                   Remover
-                </Button>
-                {'  '}
+                </Button>{' '}
               </td>
             </tr>
           ))}

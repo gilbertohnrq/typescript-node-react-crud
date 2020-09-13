@@ -12,4 +12,4 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(routes);
 
-app.listen(8000);
+app.listen(3334);
