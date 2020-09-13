@@ -8,18 +8,18 @@
 
 ## Front-end
 
-- [ ] Criar projeto com ReactJS
-- [ ] Instalar o Bootstrap
-- [ ] Instalar o Axios
-- [ ] Configurar o projeto
-- [ ] Configurar o Service
-- [ ] Configurar as Rotas da Aplicação
-- [ ] Adicionar a biblioteca Cors na API (Back-end)
-- [ ] Criar Página de Funcionários
-- [ ] Criar componente de Listagem de Funcionários
-- [ ] Criar Página de Formulário
-- [ ] Criar Método de Cadastro
-- [ ] Criar Método de Edição
-- [ ] Criar Página de Visualização
-- [ ] Criar Método de Visualização
-- [ ] Criar Método de Remover Funcionário
+- [x] Criar projeto com ReactJS
+- [x] Instalar o Bootstrap
+- [x] Instalar o Axios
+- [x] Configurar o projeto
+- [x] Configurar o Service
+- [x] Configurar as Rotas da Aplicação
+- [x] Adicionar a biblioteca Cors na API (Back-end)
+- [x] Criar Página de Funcionários
+- [x] Criar componente de Listagem de Funcionários
+- [x] Criar Página de Formulário
+- [x] Criar Método de Cadastro
+- [x] Criar Método de Edição
+- [x] Criar Página de Visualização
+- [x] Criar Método de Visualização
+- [x] Criar Método de Remover Funcionário
