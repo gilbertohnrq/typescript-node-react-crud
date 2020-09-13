@@ -19,7 +19,7 @@ Feito utilizando:
 ### Postgres
 Para criação do banco de dados utilize o [Postbird](https://www.electronjs.org/apps/postbird)
 
-Por padrão as configurações serão:
+Por padrão as configurações para login serão:
 - Host: localhost
 - Port: 5432
 - username: postgres
