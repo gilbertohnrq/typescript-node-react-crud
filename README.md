@@ -61,7 +61,7 @@ $ yarn start
 
 #APP
 
-![React APP](https://giphy.com/gifs/XG7tR4NrB29db1aXue)
+![React APP](https://media.giphy.com/media/XG7tR4NrB29db1aXue/giphy.gif)
 
 
 ## To-dos
