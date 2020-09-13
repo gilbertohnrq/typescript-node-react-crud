@@ -12,9 +12,9 @@ Feito utilizando:
 ### Instalação
 
 - Requerimentos:
-[Node.js](https://nodejs.org/)
-[Yarn](https://yarnpkg.com/)
-[Postbird](https://www.electronjs.org/apps/postbird)
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
+- [Postbird](https://www.electronjs.org/apps/postbird)
 
 ### Postgres
 Para criação do banco de dados utilize o [Postbird](https://www.electronjs.org/apps/postbird)
