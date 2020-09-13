@@ -20,10 +20,10 @@ Feito utilizando:
 Para criação do banco de dados utilize o [Postbird](https://www.electronjs.org/apps/postbird)
 
 Por padrão as configurações serão:
-Host: localhost
-Port: 5432
-username: postgres
-password: postgres
+- Host: localhost
+- Port: 5432
+- username: postgres
+- password: postgres
 
 Crie um banco de dados com o nome de db_crud
 
@@ -37,13 +37,13 @@ $ git clone git@github.com:gilbertohnrq/typescript-node-react-crud.git
 
 Vá para o diretório da api:
 ```sh
-$ cd typescript-node-react-crud\crud_api
+$ cd typescript-node-react-crud/crud_api
 $ npm install
 ```
 
 Em um novo terminal no diretório do frontend:
 ```sh
-$ cd typescript-node-react-crud\frontend
+$ cd typescript-node-react-crud/frontend
 $ yarn install
 ```
 
