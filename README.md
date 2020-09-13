@@ -59,6 +59,10 @@ E para visualizar a aplicação React
 $ yarn start
 ```
 
+#APP
+
+![React APP](https://giphy.com/gifs/XG7tR4NrB29db1aXue)
+
 
 ## To-dos
 
